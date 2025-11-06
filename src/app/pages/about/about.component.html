@@ -1,0 +1,78 @@
+<div class="min-h-screen bg-white dark:bg-gray-900">
+  <div class="container mx-auto px-4 py-16">
+    <div class="text-center mb-12">
+      <h1 class="text-5xl font-bold text-gray-900 dark:text-white mb-4">
+        About Us
+      </h1>
+      <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+        We're passionate about creating exceptional web experiences
+      </p>
+    </div>
+
+    <div class="max-w-4xl mx-auto mb-16">
+      <div class="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900 dark:to-purple-900 p-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Our Mission</h2>
+        <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+          At Hitzeman Web, we believe in the power of technology to transform businesses and connect people.
+          Our mission is to create innovative, accessible, and performant web applications that make a difference.
+        </p>
+        <p class="text-lg text-gray-700 dark:text-gray-300">
+          We combine cutting-edge technologies like Angular, Server-Side Rendering, and modern CSS frameworks
+          to deliver solutions that are not only beautiful but also fast, scalable, and maintainable.
+        </p>
+      </div>
+    </div>
+
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">
+        Our Team
+      </h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        @for (member of teamMembers; track member.name) {
+          <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center">
+            <div class="w-24 h-24 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold">
+              {{ member.name.charAt(0) }}
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+              {{ member.name }}
+            </h3>
+            <p class="text-blue-600 dark:text-blue-400 font-semibold mb-4">
+              {{ member.role }}
+            </p>
+            <p class="text-gray-600 dark:text-gray-400">
+              {{ member.description }}
+            </p>
+          </div>
+        }
+      </div>
+    </div>
+
+    <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow-lg text-center">
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+        Our Values
+      </h2>
+      <div class="grid md:grid-cols-4 gap-6 mt-8">
+        <div>
+          <div class="text-4xl mb-2">💡</div>
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Innovation</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Always exploring new technologies</p>
+        </div>
+        <div>
+          <div class="text-4xl mb-2">🤝</div>
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Collaboration</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Working together for success</p>
+        </div>
+        <div>
+          <div class="text-4xl mb-2">⚡</div>
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Excellence</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Committed to quality in everything</p>
+        </div>
+        <div>
+          <div class="text-4xl mb-2">🌱</div>
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Growth</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Continuous learning and improvement</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
